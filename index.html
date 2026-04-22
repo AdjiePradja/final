@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuliaSoft Digital – Software Akuntansi Hybrid untuk UMKM & Perusahaan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-logo">
+                    <div class="nav-logo-icon">
+                        <img src="assets/logo/logo.png" alt="AuliaSoft Logo"
+                            onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'width:38px;height:38px;background:var(--gradient-primary);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:18px;\'><i class=\'fa-solid fa-cash-register\'></i></div>';">
+                    </div>
+                    <div class="nav-logo-text">Aulia<span>soft</span></div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="javascript:void(0)" class="dropdown-trigger">Layanan <i
+                                class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product-detail.html"><i class="fa-solid fa-circle-info"></i> Detail Produk</a>
+                            </li>
+                            <li><a href="others.html"><i class="fa-solid fa-ellipsis-h"></i> Lainnya</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="https://pos.auliasoft.com/" target="_blank" class="btn btn-outline btn-sm"><i
+                            class="fa-solid fa-right-to-bracket"></i> Masuk</a>
+                    <a href="https://pos.auliasoft.com/" target="_blank" class="btn btn-primary btn-sm">Mulai
+                        Gratis</a>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu">
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <div class="mobile-menu-item">
+            <span class="mobile-menu-header">Layanan</span>
+            <a href="product-detail.html" onclick="toggleMenu()">Detail Produk</a>
+            <a href="others.html" onclick="toggleMenu()">Lainnya</a>
+        </div>
+        <a href="about.html" onclick="toggleMenu()">Tentang Kami</a>
+        <a href="contact.html" onclick="toggleMenu()">Kontak</a>
+        <a href="https://pos.auliasoft.com/" target="_blank" onclick="toggleMenu()"><i
+                class="fa-solid fa-right-to-bracket"></i>
+            Masuk</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-text reveal">
+                    <div class="hero-badge">
+                        <span class="dot"></span>
+                        <span>Penyedia Software Akuntansi Hybrid #1 untuk UMKM Indonesia</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Tingkatkan Penjualan <span class="highlight"> E-Pos.</span> Dengan Auliasoft
+                    </h1>
+                    <p class="hero-subtitle">
+                        AuliaSoft merupakan penyedia software akuntansi hybrid (desktop + cloud)
+                        untuk koperasi, UMKM, UKM, dan
+                        perusahaan. Produk E-Pos dari auliasoft akan urus transaksi hingga laporan keuangan, semuanya
+                        dalam
+                        satu aplikasi.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://pos.auliasoft.com/" target="_blank" class="btn btn-primary btn-lg"><i
+                                class="fa-solid fa-rocket"></i> Coba Gratis
+                            Sekarang</a>
+                        <a href="https://wa.me/6281241945881" target="_blank" class="btn btn-outline btn-lg"><i
+                                class="fab fa-whatsapp"></i> Demo Gratis</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div>
+                            <div class="hero-stat-num">2.000+</div>
+                            <div class="hero-stat-label">Klien Aktif</div>
+                        </div>
+                        <div>
+                            <div class="hero-stat-num">200+</div>
+                            <div class="hero-stat-label">Laporan Instan</div>
+                        </div>
+                        <div>
+                            <div class="hero-stat-num">15+</div>
+                            <div class="hero-stat-label">Tahun Pengalaman</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-delay-2">
+                    <div class="hero-floating hero-floating-1">
+                        <div class="float-label">Support Online</div>
+                        <div class="float-value" style="color:var(--accent2);">24/7</div>
+                    </div>
+                    <div class="hero-slider" id="hero-slider">
+                        <div class="hero-slide" onclick="switchHero(0)">
+                            <img src="assets/images/hero1.png" alt="AuliaSoft Hero 1"
+                                onerror="this.src='assets/images/heros.png'">
+                        </div>
+                        <div class="hero-slide" onclick="switchHero(1)">
+                            <img src="assets/images/hero2.png" alt="AuliaSoft Hero 2"
+                                onerror="this.src='assets/images/heros.png'">
+                        </div>
+                        <div class="hero-slide" onclick="switchHero(2)">
+                            <img src="assets/images/hero3.png" alt="AuliaSoft Hero 3"
+                                onerror="this.src='assets/images/heros.png'">
+                        </div>
+                    </div>
+                    <div class="hero-floating hero-floating-2">
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <!-- <span class="float-icon">📊</span> -->
+                            <div>
+                                <div class="float-label">Garansi Aplikasi</div>
+                                <div class="float-value" style="color:var(--accent2);">1.5 Tahun</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section id="trust">
+        <div class="marquee-wrapper reveal">
+            <!-- Set 1 -->
+            <div class="trust-logos">
+                <div class="mitra-card"><img src="assets/images/kemenkop.png" alt="Kemenkop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Kemenkop';"></div>
+                <div class="mitra-card"><img src="assets/images/necoop.jpg" alt="Necoop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Necoop';"></div>
+                <div class="mitra-card"><img src="assets/images/simkopdes.png" alt="Simkopdes"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Simkopdes';"></div>
+                <div class="mitra-card"><img src="assets/images/gantari.png" alt="Gantari"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Gantari';"></div>
+                <div class="mitra-card"><img src="assets/images/cooplink.png" alt="Cooplink"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Cooplink';"></div>
+            </div>
+            <!-- Set 2 -->
+            <div class="trust-logos">
+                <div class="mitra-card"><img src="assets/images/kemenkop.png" alt="Kemenkop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Kemenkop';"></div>
+                <div class="mitra-card"><img src="assets/images/necoop.jpg" alt="Necoop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Necoop';"></div>
+                <div class="mitra-card"><img src="assets/images/simkopdes.png" alt="Simkopdes"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Simkopdes';"></div>
+                <div class="mitra-card"><img src="assets/images/gantari.png" alt="Gantari"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Gantari';"></div>
+                <div class="mitra-card"><img src="assets/images/cooplink.png" alt="Cooplink"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Cooplink';"></div>
+            </div>
+            <!-- Set 3 -->
+            <div class="trust-logos">
+                <div class="mitra-card"><img src="assets/images/kemenkop.png" alt="Kemenkop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Kemenkop';"></div>
+                <div class="mitra-card"><img src="assets/images/necoop.jpg" alt="Necoop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Necoop';"></div>
+                <div class="mitra-card"><img src="assets/images/simkopdes.png" alt="Simkopdes"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Simkopdes';"></div>
+                <div class="mitra-card"><img src="assets/images/gantari.png" alt="Gantari"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Gantari';"></div>
+                <div class="mitra-card"><img src="assets/images/cooplink.png" alt="Cooplink"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Cooplink';"></div>
+            </div>
+            <!-- Set 4 -->
+            <div class="trust-logos">
+                <div class="mitra-card"><img src="assets/images/kemenkop.png" alt="Kemenkop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Kemenkop';"></div>
+                <div class="mitra-card"><img src="assets/images/necoop.jpg" alt="Necoop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Necoop';"></div>
+                <div class="mitra-card"><img src="assets/images/simkopdes.png" alt="Simkopdes"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Simkopdes';"></div>
+                <div class="mitra-card"><img src="assets/images/gantari.png" alt="Gantari"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Gantari';"></div>
+                <div class="mitra-card"><img src="assets/images/cooplink.png" alt="Cooplink"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Cooplink';"></div>
+            </div>
+            <!-- Set 5 -->
+            <div class="trust-logos">
+                <div class="mitra-card"><img src="assets/images/kemenkop.png" alt="Kemenkop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Kemenkop';"></div>
+                <div class="mitra-card"><img src="assets/images/necoop.jpg" alt="Necoop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Necoop';"></div>
+                <div class="mitra-card"><img src="assets/images/simkopdes.png" alt="Simkopdes"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Simkopdes';"></div>
+                <div class="mitra-card"><img src="assets/images/gantari.png" alt="Gantari"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Gantari';"></div>
+                <div class="mitra-card"><img src="assets/images/cooplink.png" alt="Cooplink"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Cooplink';"></div>
+            </div>
+            <!-- Set 6 -->
+            <div class="trust-logos">
+                <div class="mitra-card"><img src="assets/images/kemenkop.png" alt="Kemenkop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Kemenkop';"></div>
+                <div class="mitra-card"><img src="assets/images/necoop.jpg" alt="Necoop"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Necoop';"></div>
+                <div class="mitra-card"><img src="assets/images/simkopdes.png" alt="Simkopdes"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Simkopdes';"></div>
+                <div class="mitra-card"><img src="assets/images/gantari.png" alt="Gantari"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Gantari';"></div>
+                <div class="mitra-card"><img src="assets/images/cooplink.png" alt="Cooplink"
+                        onerror="this.style.display='none';this.parentElement.innerHTML='Cooplink';"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEM & SOLUTION -->
+    <section id="problem" class="section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="tag"><i class="fa-solid fa-lightbulb"></i> Bussiness Domain</div>
+                <h2 class="section-title" style="margin-top:12px">E-Pos Auliasoft sebagai solusi <span>
+                        Operasional Bisnis</span>
+                </h2>
+                <p class="section-subtitle">Banyak pemilik bisnis masih bergantung pada catatan manual yang rawan
+                    kesalahan dan sulit dipantau.</p>
+            </div>
+            <div class="problem-grid">
+                <img src="assets/images/side.png" alt="Auliasoft POS Mockup" class="reveal"
+                    style="max-width:100%; height:auto; display:block; margin: 0 auto;"
+                    onerror="this.style.display='none';">
+                <div>
+                    <h3 style="font-size:18px;font-weight:700;margin-bottom:20px;color:var(--primary);">Solusi Auliasoft
+                        untuk Operasional Bisnis</h3>
+                    <div class="solution-cards">
+                        <div class="solution-item reveal">
+                            <div class="solution-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <div class="solution-title">Sistem Transaksi & Penjualan Digital</div>
+                                <div class="solution-desc">AuliaSoft menghadirkan sistem transaksi modern yang
+                                    menggantikan proses manual menjadi digital, cepat, dan terkontrol.</div>
+                            </div>
+                        </div>
+                        <div class="solution-item reveal reveal-delay-1">
+                            <div class="solution-icon"><i class="fa-solid fa-warehouse"></i></div>
+                            <div>
+                                <div class="solution-title">Manajemen Inventori & Operasional</div>
+                                <div class="solution-desc">AuliaSoft membantu bisnis dalam mengelola stok, distribusi
+                                    barang, dan operasional harian secara terintegrasi.</div>
+                            </div>
+                        </div>
+                        <div class="solution-item reveal reveal-delay-2">
+                            <div class="solution-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div>
+                                <div class="solution-title">Analisis & Laporan Bisnis</div>
+                                <div class="solution-desc">AuliaSoft menyediakan data dan laporan yang terstruktur untuk
+                                    membantu pemilik usaha memahami performa bisnis secara menyeluruh.</div>
+                            </div>
+                        </div>
+                        <div class="solution-item reveal reveal-delay-3">
+                            <div class="solution-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div>
+                                <div class="solution-title">Efisiensi Proses Bisnis</div>
+                                <div class="solution-desc">AuliaSoft memastikan seluruh aktivitas keuangan tercatat
+                                    dengan rapi, transparan, dan dapat diaudit.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="tag"><i class="fa-solid fa-star"></i> Product Features</div>
+                <h2 class="section-title" style="margin-top:12px">Fitur utama menggunakan <span><br>E-Pos
+                        AuliaSoft</span></h2>
+                <p class="section-subtitle">Dari transaksi sederhana hingga manajemen multi-outlet. Auliasoft POS hadir
+                    dengan fitur lengkap.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal" data-hover-img="assets/images/pembayaran.png">
+                    <div class="feature-card-icon" style="background:#EFF6FF;color:#2563EB"><i
+                            class="fa-solid fa-credit-card"></i></div>
+                    <div class="feature-card-title">Pembayaran</div>
+                    <div class="feature-card-desc">Kelola proses pembayaran transaksi dengan berbagai metode dalam satu
+                        sistem terintegrasi.</div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card reveal reveal-delay-1" data-hover-img="assets/images/kontak.png">
+                    <div class="feature-card-icon" style="background:#FDF4FF;color:#9333EA"><i
+                            class="fa-solid fa-address-book"></i></div>
+                    <div class="feature-card-title">Kontak</div>
+                    <div class="feature-card-desc">Kelola pemasok, pelanggan, grup pelanggan, serta impor data kontak
+                        dengan mudah.</div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card reveal reveal-delay-2" data-hover-img="assets/images/produk.png">
+                    <div class="feature-card-icon" style="background:#F0FDF4;color:#16A34A"><i
+                            class="fa-solid fa-box-open"></i></div>
+                    <div class="feature-card-title">Produk</div>
+                    <div class="feature-card-desc">Kelola daftar produk, tambah produk baru, atur harga, cetak label,
+                        dan tentukan varian produk.</div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card reveal" data-hover-img="assets/images/pembelian.png">
+                    <div class="feature-card-icon" style="background:#FFF7ED;color:#EA580C"><i
+                            class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="feature-card-title">Pembelian</div>
+                    <div class="feature-card-desc">Kelola pesanan pembelian, daftar pembelian, serta pencatatan
+                        transaksi pembelian.</div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card reveal reveal-delay-1" data-hover-img="assets/images/penjualan.png">
+                    <div class="feature-card-icon" style="background:#F0F9FF;color:#0284C7"><i
+                            class="fa-solid fa-cash-register"></i></div>
+                    <div class="feature-card-title">Penjualan</div>
+                    <div class="feature-card-desc">Kelola semua transaksi penjualan, daftar penjualan, diskon,
+                        pengiriman, hingga impor data penjualan.</div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card reveal reveal-delay-2" data-hover-img="assets/images/biaya.png">
+                    <div class="feature-card-icon" style="background:#FEF2F2;color:#DC2626"><i
+                            class="fa-solid fa-money-bill-transfer"></i></div>
+                    <div class="feature-card-title">Biaya</div>
+                    <div class="feature-card-desc">Catat dan kelola berbagai pengeluaran bisnis beserta kategorinya
+                        secara terstruktur.</div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card reveal" data-hover-img="assets/images/aruskas.png">
+                    <div class="feature-card-icon" style="background:#ECFDF5;color:#059669"><i
+                            class="fa-solid fa-money-bill-trend-up"></i></div>
+                    <div class="feature-card-title">Arus Kas & Akun Pembayaran</div>
+                    <div class="feature-card-desc">Pantau keuangan melalui balance sheet, trial balance, dan laporan
+                        arus kas secara terintegrasi.</div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card reveal reveal-delay-1" data-hover-img="assets/images/akuntansi.png">
+                    <div class="feature-card-icon" style="background:#FAF5FF;color:#7E22CE"><i
+                            class="fa-solid fa-calculator"></i></div>
+                    <div class="feature-card-title">Akuntansi</div>
+                    <div class="feature-card-desc">Kelola pencatatan keuangan bisnis secara otomatis dan sistematis.
+                    </div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+                <div class="feature-card reveal reveal-delay-2" data-hover-img="assets/images/laporan.png">
+                    <div class="feature-card-icon" style="background:#FFFBEB;color:#D97706"><i
+                            class="fa-solid fa-chart-pie"></i></div>
+                    <div class="feature-card-title">Laporan</div>
+                    <div class="feature-card-desc">Akses laporan lengkap seperti laba rugi, penjualan, pembelian, pajak,
+                        pelanggan, pemasok, dan stok barang.</div>
+                    <div class="feature-card-action">Detail... <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+            <!-- Product showcase image -->
+            <div class="reveal"
+                style="margin-top:56px;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-xl);border:1px solid var(--border);">
+                <img src="assets/images/sidehero.png" alt="AuliaSoft Product Showcase"
+                    style="width:100%;height:auto;display:block;" onerror="this.style.display='none';">
+            </div>
+        </div>
+    </section>
+    <section id="usecases" class="section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="tag"><i class="fa-solid fa-building"></i> Target Audience</div>
+                <h2 class="section-title" style="margin-top:12px">Satu Aplikasi untuk <span>Berbagai Jenis Bisnis</span>
+                </h2>
+                <p class="section-subtitle">Auliasoft POS fleksibel dan dapat dikonfigurasi sesuai kebutuhan unik bisnis
+                    Anda.</p>
+            </div>
+            <div class="usecases-container">
+                <div class="usecases-left reveal">
+                    <div class="usecases-image-circle" id="usecase-circle" style="background:#EF4444;">
+                        <img src="assets/images/restaurant.jpg" alt="Warung & Rumah Makan"
+                            class="usecase-img-layer active" data-index="0" onerror="this.style.display='none';">
+                        <img src="assets/images/retail.jpg" alt="Toko Retail & Minimarket" class="usecase-img-layer"
+                            data-index="1" onerror="this.style.display='none';">
+                        <img src="assets/images/salon.jpg" alt="Salon, Barber & Spa" class="usecase-img-layer"
+                            data-index="2" onerror="this.style.display='none';">
+                        <img src="assets/images/fashion.jpg" alt="Fashion & Butik" class="usecase-img-layer"
+                            data-index="3" onerror="this.style.display='none';">
+                        <img src="assets/images/apotek.jpg" alt="Apotek & Klinik" class="usecase-img-layer"
+                            data-index="4" onerror="this.style.display='none';">
+                    </div>
+                </div>
+                <div class="usecases-right reveal reveal-delay-1" id="usecase-tabs">
+                    <!-- Tab 1 -->
+                    <div class="usecase-tab active" data-index="0" data-img="assets/images/restaurant.jpg"
+                        data-color="#EF4444" onclick="switchUsecase(0)">
+                        <div class="usecase-tab-header">
+                            <i class="fa-solid fa-utensils"></i> Restoran & Kafe
+                        </div>
+                        <div class="usecase-tab-content">
+                            <p>Kelola menu, pesanan meja, dan split bill dengan mudah. Tampilan KDS (Kitchen Display)
+                                untuk dapur agar operasional lebih lancar.</p>
+                            <a href="https://wa.me/6281241945881?text=Halo%20AuliaSoft,%20saya%20tertarik%20dengan%20E-POS%20untuk%20Restoran."
+                                target="_blank" class="usecase-btn">Lebih detail</a>
+                        </div>
+                    </div>
+                    <!-- Tab 2 -->
+                    <div class="usecase-tab" data-index="1" data-img="assets/images/retail.jpg" data-color="#3B82F6"
+                        onclick="switchUsecase(1)">
+                        <div class="usecase-tab-header">
+                            <i class="fa-solid fa-store"></i> Toko Retail & Minimarket
+                        </div>
+                        <div class="usecase-tab-content">
+                            <p>Manajemen ribuan SKU, supplier, pembelian otomatis saat stok tipis, dan laporan margin
+                                produk secara real-time.</p>
+                            <a href="https://wa.me/6281241945881?text=Halo%20AuliaSoft,%20saya%20tertarik%20dengan%20E-POS%20untuk%20Retail."
+                                target="_blank" class="usecase-btn">Lebih detail</a>
+                        </div>
+                    </div>
+                    <!-- Tab 3 -->
+                    <div class="usecase-tab" data-index="2" data-img="assets/images/salon.jpg" data-color="#EC4899"
+                        onclick="switchUsecase(2)">
+                        <div class="usecase-tab-header">
+                            <i class="fa-solid fa-scissors"></i> Salon, Barber & Spa
+                        </div>
+                        <div class="usecase-tab-content">
+                            <p>Booking jadwal, penugasan terapis, paket layanan, dan program loyalitas pelanggan setia
+                                untuk meningkatkan retensi.</p>
+                            <a href="https://wa.me/6281241945881?text=Halo%20AuliaSoft,%20saya%20tertarik%20dengan%20E-POS%20untuk%20Salon."
+                                target="_blank" class="usecase-btn">Lebih detail</a>
+                        </div>
+                    </div>
+                    <!-- Tab 4 -->
+                    <div class="usecase-tab" data-index="3" data-img="assets/images/fashion.jpg" data-color="#F43F5E"
+                        onclick="switchUsecase(3)">
+                        <div class="usecase-tab-header">
+                            <i class="fa-solid fa-shirt"></i> Fashion & Butik
+                        </div>
+                        <div class="usecase-tab-content">
+                            <p>Produk dengan varian (ukuran/warna), foto produk, konsinyasi, dan integrasi inventory
+                                toko secara presisi.</p>
+                            <a href="https://wa.me/6281241945881?text=Halo%20AuliaSoft,%20saya%20tertarik%20dengan%20E-POS%20untuk%20Fashion."
+                                target="_blank" class="usecase-btn">Lebih detail</a>
+                        </div>
+                    </div>
+                    <!-- Tab 5 -->
+                    <div class="usecase-tab" data-index="4" data-img="assets/images/apotek.jpg" data-color="#10B981"
+                        onclick="switchUsecase(4)">
+                        <div class="usecase-tab-header">
+                            <i class="fa-solid fa-pills"></i> Apotek & Klinik
+                        </div>
+                        <div class="usecase-tab-content">
+                            <p>Manajemen obat dengan expired date, batch number, resep dokter, dan pengaturan harga
+                                khusus yang akurat.</p>
+                            <a href="https://wa.me/6281241945881?text=Halo%20AuliaSoft,%20saya%20tertarik%20dengan%20E-POS%20untuk%20Apotek."
+                                target="_blank" class="usecase-btn">Lebih detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SYSTEM WORKFLOW (USE CASE DIAGRAM) -->
+    <section id="workflow" class="section" style="background:var(--surface2);">
+        <div class="container">
+            <div class="workflow-grid">
+                <!-- Left: Text Content -->
+                <div class="workflow-text reveal">
+                    <div class="tag"><i class="fa-solid fa-diagram-project"></i> Use Case Diagram</div>
+                    <h2 class="section-title" style="margin-top:16px;"> Alur kerja & Penggunaan <span>E-Pos
+                            Auliasoft</span></h2>
+                    <p class="section-subtitle" style="margin-left:0; max-width:100%;">Diagram use case ini
+                        menggambarkan bagaimana E-Pos AuliaSoft menjembatani interaksi antara Admin & Kasir serta
+                        Pelanggan dalam satu ekosistem yang sinkron.</p>
+
+                    <div class="workflow-features" style="margin-top:32px;">
+                        <div class="w-feat-item">
+                            <div class="w-feat-icon"><i class="fa-solid fa-user-tie"></i></div>
+                            <div>
+                                <strong>Role: Admin & Kasir</strong>
+                                <p>Kendali penuh atas penjualan, produk, inventori dan lain lain.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-feat-item">
+                            <div class="w-feat-icon"><i class="fa-solid fa-cash-register"></i></div>
+                            <div>
+                                <strong>Role: Pembeli</strong>
+                                <p>Melakukan pembelian, menggunakan promo saat pembelian dan mendapatkan struk dll
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Diagram Display -->
+                <div class="workflow-visual reveal reveal-delay-1">
+                    <div class="blueprint-card">
+                        <div class="blueprint-header">
+                            <div class="bp-dots"><span></span><span></span><span></span></div>
+                            <div class="bp-title">Use Case Diagram</div>
+                        </div>
+                        <div class="blueprint-body">
+                            <!-- Gantilah 'assets/images/usecase.png' dengan path file asli kamu nanti -->
+                            <img src="assets/images/usecase.png" alt="AuliaSoft Use Case Diagram" id="usecaseImg"
+                                onerror="this.src='https://placehold.co/800x600/f8fafc/2563eb?text=Use+Case+Diagram+PNG'">
+                            <div class="blueprint-overlay">
+                                <a href="assets/images/usecase.png" target="_blank" class="btn btn-primary btn-sm">
+                                    <i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Ukuran Penuh
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MID-PAGE CTA -->
+    <section id="mid-cta" class="section-sm">
+        <div class="container">
+            <div class="cta-card reveal">
+                <div class="cta-card-content">
+                    <h2 class="cta-headline">Siap Mengoptimalkan Bisnis Anda dengan <span>E-Pos AuliaSoft?</span></h2>
+                    <p class="cta-text">Nikmati kemudahan kelola transaksi, stok, hingga laporan keuangan dalam satu
+                        genggaman. Bergabunglah dengan 2.000+ pebisnis sukses lainnya.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://pos.auliasoft.com/" target="_blank" class="btn btn-success btn-lg">
+                        <i class="fa-solid fa-rocket"></i> Coba Gratis Sekarang
+                    </a>
+                    <a href="https://wa.me/6281241945881" target="_blank" class="btn btn-outline-white btn-lg">
+                        <i class="fab fa-whatsapp"></i> Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section id="comparison" class="section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="tag"><i class="fa-solid fa-trophy"></i> Keunggulan Dengan Kompetitor</div>
+                <h2 class="section-title" style="margin-top:12px">Keunggulan E-Pos Auliasoft dibanding
+                    <span>Kompetitor ?</span>
+                </h2>
+                <p class="section-subtitle">Bandingkan sendiri. Kami hadir dengan harga terjangkau namun fitur
+                    enterprise.</p>
+            </div>
+            <div class="table-responsive reveal">
+                <div class="comparison-table">
+                    <div class="comp-header">
+                        <div class="comp-header-item">Aspek</div>
+                        <div class="comp-header-item highlight">E-POS AuliaSoft</div>
+                        <div class="comp-header-item">Produk E-POS A</div>
+                        <div class="comp-header-item">Produk E-POS B</div>
+                    </div>
+                    <div class="comp-row comp-highlight">
+                        <div class="comp-feature">Multi Outlet</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>Terintegrasi
+                                multi cabang dalam satu sistem</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i> <span>Terbatas /
+                                add-on</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Terbatas</span>
+                        </div>
+                    </div>
+                    <div class="comp-row">
+                        <div class="comp-feature">Toko Online & Marketplace</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>Website,
+                                Weborder, Shopee, Tokopedia, Grabmart</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-xmark no"></i> <span>Tidak tersedia</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Terbatas</span>
+                        </div>
+                    </div>
+                    <div class="comp-row comp-highlight">
+                        <div class="comp-feature">Sistem Kasir (POS)</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>Lengkap (meja,
+                                multisatuan, reservasi, grosir)</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i> <span>Kasir
+                                basic</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Terbatas</span>
+                        </div>
+                    </div>
+                    <div class="comp-row">
+                        <div class="comp-feature">Manajemen Stok & Inventori</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>COGS, produksi,
+                                transfer stok, batch & serial</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Sederhana</span>
+                        </div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i> <span>Tidak
+                                lengkap</span></div>
+                    </div>
+                    <div class="comp-row comp-highlight">
+                        <div class="comp-feature">Laporan & Analisa Bisnis</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>Laporan lengkap
+                                & real-time</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Standar</span>
+                        </div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Terbatas</span>
+                        </div>
+                    </div>
+                    <div class="comp-row">
+                        <div class="comp-feature">Akuntansi Terintegrasi</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>CoA, auto
+                                posting, laporan keuangan</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-xmark no"></i> <span>Perlu sistem lain</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Sebagian</span>
+                        </div>
+                    </div>
+                    <div class="comp-row comp-highlight">
+                        <div class="comp-feature">Manajemen Karyawan & Payroll</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>Absensi, shift,
+                                penggajian</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-xmark no"></i> <span>Tidak tersedia</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-xmark no"></i> <span>Tidak tersedia</span></div>
+                    </div>
+                    <div class="comp-row">
+                        <div class="comp-feature">Digital Payment</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>QRIS, EDC,
+                                struk digital WA/SMS/Email</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Terbatas</span>
+                        </div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Terbatas</span>
+                        </div>
+                    </div>
+                    <div class="comp-row comp-highlight">
+                        <div class="comp-feature">Dukungan & Layanan</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>Support 24/7,
+                                training & pendampingan</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Terbatas</span>
+                        </div>
+                        <div class="comp-cell"><i class="fa-solid fa-triangle-exclamation partial"></i>
+                            <span>Terbatas</span>
+                        </div>
+                    </div>
+                    <div class="comp-row">
+                        <div class="comp-feature">Garansi & Kepercayaan</div>
+                        <div class="comp-cell highlight-col"><i class="fa-solid fa-check yes"></i> <span>Garansi 1.5
+                                tahun, 2000+ klien, 15+ tahun pengalaman</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-xmark no"></i> <span>Tidak jelas</span></div>
+                        <div class="comp-cell"><i class="fa-solid fa-xmark no"></i> <span>Tidak jelas</span></div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align:center;font-size:13px;color:var(--text-light);margin-top:16px;">*Berdasarkan riset dan
+                informasi publik. Fitur dapat berubah sewaktu-waktu.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="tag"><i class="fa-solid fa-building"></i> Tentang Kami</div>
+            </div>
+            <!-- Top Part: Grid & Stats -->
+            <div class="stats-top reveal" style="margin-top: 48px;">
+                <div class="stats-images-grid">
+                    <img src="assets/images/tokorahmi.jpg" alt="User 1" class="stats-img stats-img-1"
+                        onerror="this.src='https://placehold.co/400x300';">
+                    <img src="assets/images/ukhuwah.jpg" alt="User 2" class="stats-img stats-img-2"
+                        onerror="this.src='https://placehold.co/400x300';">
+                    <img src="assets/images/cv.jpg" alt="User 3" class="stats-img stats-img-3"
+                        onerror="this.src='https://placehold.co/400x300';">
+                    <img src="assets/images/restaurant.jpg" alt="User 4" class="stats-img stats-img-4"
+                        onerror="this.src='https://placehold.co/400x300';">
+                </div>
+                <div class="stats-content">
+                    <h2 class="section-title" style="margin-bottom: 24px; text-align: left; line-height: 1.2;">Solusi
+                        Penyedia <span>Software Akuntansi Terpercaya</span> sejak 15 Tahun</h2>
+                    <p class="stats-desc" style="margin-top: 0;">AuliaSoft telah membantu 2.000+ wirausaha di berbagai
+                        kota dan kabupaten
+                        Indonesia mengoptimalkan bisnis mereka melalui solusi akuntansi yang terintegrasi dan mudah
+                        digunakan.</p>
+                    <div class="stats-numbers">
+                        <div class="stat-item">
+                            <i class="fa-solid fa-clock-rotate-left stat-icon"></i>
+                            <div class="stat-val">15+</div>
+                            <div class="stat-label">Tahun Pengalaman</div>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-users stat-icon"></i>
+                            <div class="stat-val">2.000+</div>
+                            <div class="stat-label">Klien Terpercaya</div>
+                        </div>
+                        <div class="stats-divider"></div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-headset stat-icon"></i>
+                            <div class="stat-val">24/7</div>
+                            <div class="stat-label">Support Online</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Part: Security Banner -->
+            <div class="security-banner reveal reveal-delay-1">
+                <div class="sec-banner-content">
+                    <h3 class="sec-banner-title">#Selalu Ada keamanan</h3>
+                    <p class="sec-banner-desc">Kini, AuliaSoft telah terdaftar dan resmi diawasi oleh DJP (Direktorat
+                        Jenderal Pajak)
+                        sebagai Penyedia Aplikasi Akuntansi seperti E-Pos. Keamanan data serta legalitas operasional
+                        bisnis Anda
+                        terjamin secara nasional.</p>
+                </div>
+                <div class="sec-banner-visual">
+                    <div class="sec-banner-badge"><i class="fa-solid fa-circle-check"></i> Terdaftar DJP</div>
+                    <img src="assets/images/djp.png" alt="DJP Logo"
+                        onerror="this.src='https://placehold.co/300x150?text=Logo+DJP';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="tag"><i class="fa-solid fa-quote-left"></i> Testimoni</div>
+                <h2 class="section-title" style="margin-top:12px">Kata Mereka tentang <span>AuliaSoft</span></h2>
+                <p class="section-subtitle">Lebih dari 2.000 klien sudah mempercayakan operasional bisnis mereka kepada
+                    AuliaSoft Digital.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Aplikasi E-pos sangat membantu laporan keuangan kami. Semua data
+                        tercatat otomatis dan laporan bisa langsung saya cek dari HP kapan saja."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/kkmp.jpg" alt="KKMP bojong nangka" class="testimonial-avatar"
+                            style="object-fit:cover;">
+                        <div>
+                            <div class="testimonial-name">KKMP bojong nangka</div>
+                            <div class="testimonial-role">KKMP bojong nangka, Banten</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Support sangat responsif dan profesional. Setiap ada kendala, tim
+                        AuliaSoft langsung bantu sampai selesai, bahkan di luar jam kerja."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/tokorahmi.jpg" alt="Toko Rahmi" class="testimonial-avatar"
+                            style="object-fit:cover;">
+                        <div>
+                            <div class="testimonial-name">Toko Rahmi</div>
+                            <div class="testimonial-role">Owner Toko, Banjarmasin</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Sudah kami gunakan lebih bertahun-tahun dan tidak pernah mengecewakan.
+                        Fitur terus berkembang tapi tetap mudah dioperasikan oleh karyawan kami."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/ukhuwah.jpg" alt="Abdurrahman, M.Pd" class="testimonial-avatar"
+                            style="object-fit:cover;">
+                        <div>
+                            <div class="testimonial-name">Abdurrahman, M.Pd</div>
+                            <div class="testimonial-role">Koperasi konsumen Ukhuwah Cipta Madani, Banjarbaru</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Laporan akuntansi yang tadinya makan waktu berjam-jam, sekarang bisa
+                        selesai dalam hitungan menit. AuliaSoft benar-benar mengubah cara kami mengelola bisnis."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/cv.jpg" alt="CV Maharaya Sandana" class="testimonial-avatar"
+                            style="object-fit:cover;">
+                        <div>
+                            <div class="testimonial-name">CV Maharaya Sandana</div>
+                            <div class="testimonial-role">CV Maharaya Sandana, Balikpapan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Dengan auliasoft membuat laporan keuangan lebih mudah, cepat dan
+                        menyenangkan."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/ksu.jpg" alt="KSU BMT Rahmat Syariah" class="testimonial-avatar"
+                            style="object-fit:cover;">
+                        <div>
+                            <div class="testimonial-name">KSU BMT Rahmat Syariah</div>
+                            <div class="testimonial-role">KSU BMT Rahmat Syariah, Banjarbaru</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Sistem kerja cepat dan nyaman, dengan respon tim support yang luar
+                        biasa."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/images/minimarket.jpg" alt="Mini Market indomak" class="testimonial-avatar"
+                            style="object-fit:cover;">
+                        <div>
+                            <div class="testimonial-name">Mini Market indomak</div>
+                            <div class="testimonial-role">Mini Market indomak, Banjarbaru</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <div class="tag"><i class="fa-solid fa-circle-question"></i> FAQ</div>
+                <h2 class="section-title" style="margin-top:12px">Pertanyaan yang <span>Sering Ditanyakan</span></h2>
+                <p class="section-subtitle">Tidak menemukan jawaban? Hubungi kami via WhatsApp, kami siap membantu.</p>
+            </div>
+            <div class="faq-grid reveal">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-q-text">Apakah Auliasoft bisa digunakan tanpa internet?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">Ya! Auliasoft POS memiliki mode offline. Transaksi tetap bisa berjalan
+                        meskipun koneksi internet terputus. Data akan otomatis tersinkronisasi ke cloud begitu koneksi
+                        kembali normal.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-q-text">Perangkat apa saja yang didukung?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">Auliasoft POS tersedia di Android, iOS (smartphone & tablet), dan browser
+                        web (komputer/laptop). Mendukung printer termal Bluetooth/USB, barcode scanner, dan cash drawer.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-q-text">Bagaimana keamanan data saya?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">Data Anda terenkripsi dengan standar SSL/TLS dan disimpan di server cloud
+                        lokal Indonesia. Backup otomatis setiap hari. Akses data hanya bisa dilakukan oleh Anda dan tim
+                        yang Anda izinkan.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-q-text">Bisakah data dari kasir lama dipindahkan?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">Tentu! Tim kami akan membantu proses migrasi data dari sistem kasir lama
+                        Anda. Bisa import produk dan data pelanggan melalui file Excel/CSV. Prosesnya cepat dan tanpa
+                        biaya tambahan.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-q-text">Apakah ada biaya setup/instalasi?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">Tidak ada biaya setup. Anda cukup daftar, pilih paket, dan langsung bisa
+                        digunakan. Kami juga menyediakan panduan onboarding dan training gratis untuk semua paket
+                        berlangganan.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-q-text">Bagaimana sistem trial/coba gratis?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">Semua paket tersedia trial gratis 14 hari tanpa syarat dan tanpa perlu kartu
+                        kredit. Selama trial, Anda mendapat akses penuh ke semua fitur sesuai paket yang dipilih.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-q-text">Bisa minta fitur khusus sesuai kebutuhan bisnis saya?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">Ya! Auliasoft menyediakan layanan kustomisasi untuk kebutuhan bisnis
+                        spesifik. Hubungi tim kami untuk diskusi kebutuhan dan estimasi biaya kustomisasi. Cocok untuk
+                        paket Enterprise atau kebutuhan vertikal industri tertentu.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-q-text">Bagaimana cara melakukan pembayaran?</span>
+                        <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">Pembayaran bisa dilakukan via transfer bank menuju bank BRI, dengan nomor
+                        rekening 789001005408534
+                        atas nama PT Mitra Aulia Indonesia.</div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:40px" class="reveal">
+                <p style="font-size:15px;color:var(--text-muted);margin-bottom:16px">Masih ada pertanyaan?</p>
+                <a href="https://wa.me/6281241945881" target="_blank" class="btn btn-primary"><i
+                        class="fab fa-whatsapp"></i> Tanya via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FINAL CTA -->
+    <section id="cta">
+        <div class="container">
+            <div class="cta-inner reveal">
+                <h2 class="cta-title">Siap Jalankan Bisnis Tanpa Ribet?</h2>
+                <p class="cta-subtitle">Bergabunglah dengan 2.000+ klien yang sudah mempercayakan operasional bisnis
+                    mereka ke AuliaSoft Digital.</p>
+                <div class="cta-actions">
+                    <a href="#pricing" class="btn btn-white btn-lg"><i class="fa-solid fa-rocket"></i> Lihat Paket
+                        Harga</a>
+                    <a href="https://wa.me/6281241945881" target="_blank" class="btn wa-button btn-lg"><i
+                            class="fab fa-whatsapp"></i> Chat via WhatsApp</a>
+                </div>
+                <div class="cta-trust">
+                    <div class="cta-trust-item"><i class="fa-solid fa-check-circle"></i> Garansi Aplikasi 1.5 Tahun
+                    </div>
+                    <div class="cta-trust-item"><i class="fa-solid fa-check-circle"></i> Training Unlimited</div>
+                    <div class="cta-trust-item"><i class="fa-solid fa-check-circle"></i> Support 24/7</div>
+                    <div class="cta-trust-item"><i class="fa-solid fa-check-circle"></i> 2.000+ Klien Aktif</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="nav-logo">
+                        <div class="nav-logo-icon">
+                            <img src="assets/logo/logo.png" alt="AuliaSoft Logo"
+                                onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'width:38px;height:38px;background:var(--gradient-primary);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-size:18px;\'><i class=\'fa-solid fa-cash-register\'></i></div>';">
+                        </div>
+                        <div class="nav-logo-text">Aulia<span>soft</span></div>
+                    </a>
+                    <p>AuliaSoft merupakan perusahaan penyedia software akuntansi hybrid (desktop + cloud) untuk
+                        koperasi, UMKM, UKM, dan
+                        perusahaan Indonesia. Lebih dari 2.000 klien mempercayai kami sejak 15+ tahun.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="footer-social"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/6281241945881" target="_blank" class="footer-social"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="#features">Fitur Kasir POS</a></li>
+                        <li><a href="#pricing">Harga & Paket</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#products">Produk Lainnya</a></li>
+                        <li><a href="#">Download App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#about">Tentang Auliasoft</a></li>
+                        <li><a href="#">Blog & Tips Bisnis</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><a href="https://wa.me/6281241945881" target="_blank"><i class="fab fa-whatsapp"
+                                    style="margin-right:6px"></i>+62 812-4194-5881</a></li>
+                        <li><a href="mailto:info.awlia@gmail.com">info.awlia@gmail.com</a></li>
+                        <li><a href="#">Support 24/7</a></li>
+                        <li><a href="#faq">FAQ & Bantuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 AuliaSoft Digital. Hak cipta dilindungi undang-undang.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Keamanan Data</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WA FLOAT -->
+    <a href="https://wa.me/6281241945881" target="_blank" class="wa-float" title="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
